@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/icofont@1.0.1/icofont.min.css">
+
+<style>
+    
+    /* Base styles */
+.site-footer {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.footer-top {
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1 1 30%;
+  min-width: 250px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.footer-column p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 8px 0;
+}
+
+.footer-column ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  color: pink;
+}
+
+.footer-column button {
+  background-color: hotpink;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-column button:hover {
+  background-color: pink;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  flex: 1;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.footer-social a {
+  background: pink;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+}
+
+.footer-social a:hover {
+  background: #138d75;
+}
+
+.back-to-top {
+  background: #16a085;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
+
+</style>
+<body>
+    <footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>KRISHI MITRA</h3>
+        <p>Mangalore<br>Karnataka, India</p>
+        <p><strong>Phone:</strong> +91-9113651488<br>
+           <strong>Email:</strong> info@krishimitra.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">› Home</a></li>
+          <li><a href="#">› About</a></li>
+          <li><a href="#">› Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Staff Login</h4>
+        <p>This feature is Available only for Staff or Administrator</p>
+        <button onclick="window.location='adminloginpanel.php';">Click here to Login</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-left">
+      <p>© Copyright <strong>Krishi Mitra</strong>. All Rights Reserved<br>
+      Developed By Ranjith and Praveen</p>
+    </div>
+    <div class="footer-social">
+      <a href="#"><i class="bx bxl-twitter"></i></a>
+      <a href="#"><i class="bx bxl-facebook"></i></a>
+      <a href="#"><i class="bx bxl-instagram"></i></a>
+      <a href="#"><i class="bx bxl-skype"></i></a>
+      <a href="#"><i class="bx bxl-linkedin"></i></a>
+    </div>
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  </div>
+</footer>
+
+</body>
+</html>

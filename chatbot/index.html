@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamora Event - Live Chat Support</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="company-info">
+                <i class="fas fa-calendar-alt"></i>
+                <div>
+                    <h2>Dreamora Event</h2>
+                    <p>Professional Event Management Services</p>
+                </div>
+            </div>
+            <div class="status">
+                <span class="status-dot"></span>
+                <span>Online</span>
+            </div>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                <div class="message-content">
+                    <p>👋 Welcome to Dreamora Event! I'm here to help you with all your event planning needs.</p>
+                    <p>We specialize in:</p>
+                    <ul>
+                        <li>🎂 Birthday Parties</li>
+                        <li>💒 Wedding Events</li>
+                        <li>🏢 Official Programmes & Meetings</li>
+                        <li>🎉 Functions & Events</li>
+                        <li>🎊 Festival Management</li>
+                        <li>🎈 Office Parties</li>
+                    </ul>
+                    <p>How can I assist you today?</p>
+                </div>
+                <div class="message-time">Just now</div>
+            </div>
+        </div>
+
+        <div class="quick-replies">
+            <button class="quick-reply-btn" onclick="sendQuickReply('services')">
+                <i class="fas fa-star"></i> Our Services
+            </button>
+            <button class="quick-reply-btn" onclick="sendQuickReply('booking')">
+                <i class="fas fa-calendar-check"></i> Book Event
+            </button>
+            <button class="quick-reply-btn" onclick="sendQuickReply('pricing')">
+                <i class="fas fa-dollar-sign"></i> Pricing
+            </button>
+            <button class="quick-reply-btn" onclick="sendQuickReply('contact')">
+                <i class="fas fa-phone"></i> Contact Info
+            </button>
+        </div>
+
+        <div class="chat-input-container">
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span>Dreamora Event is typing...</span>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Type your message here..." autocomplete="off">
+                <button onclick="sendMessage()" id="sendButton" title="Send Message" aria-label="Send Message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

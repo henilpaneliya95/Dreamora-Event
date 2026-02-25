@@ -93,7 +93,7 @@ The main objective of this project is to provide an online platform where:
   - event_package
   - eventtype
 
----
+-----
 
 ## ⚙️ Installation & Setup
 
@@ -101,3 +101,4 @@ The main objective of this project is to provide an online platform where:
 2. Clone this repository:
    ```bash
    git clone https://github.com/your-username/dreamora-event.git
+
